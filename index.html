@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rosé Reverie Weddings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand-mark">R</span>
+          <div class="brand-text">
+            <span>Rosé Reverie</span>
+            <small>Wedding Booking</small>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="primary-menu">
+          <a href="#experience">Experience</a>
+          <a href="#collection">Vendors</a>
+          <a href="#stories">Love Stories</a>
+          <a href="#contact" class="nav-cta">Book a Consultation</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero-layout">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img
+            src="assets/images/hero-wedding.svg"
+            alt="Wedding couple embracing under soft pink light"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">Curated celebrations</p>
+            <h1 id="hero-title">Luxury weddings with a la vie en rose glow.</h1>
+            <p>
+              Discover an elite collection of venues, planners, and artisans curated to turn your
+              wedding vision into a timeless, romantic experience.
+            </p>
+            <button class="primary-btn">Explore Premier Packages</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="search" aria-label="Search wedding services">
+        <div class="search-card">
+          <h2>Find your perfect match</h2>
+          <p>Search venues, planners, and design teams in one elegant place.</p>
+          <form class="search-form">
+            <label>
+              Location
+              <input type="text" placeholder="Paris, Provence, or remote" />
+            </label>
+            <label>
+              Wedding date
+              <input type="date" />
+            </label>
+            <label>
+              Guest size
+              <select>
+                <option>Intimate (0-60)</option>
+                <option>Classic (60-150)</option>
+                <option>Grand (150+)</option>
+              </select>
+            </label>
+            <button type="submit" class="gold-btn">Search luxury vendors</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="carousel" id="collection" aria-label="Sponsored vendors">
+        <div class="carousel-header">
+          <h2>Featured partner ateliers</h2>
+          <p>Sponsored placements with exceptional ratings.</p>
+        </div>
+        <div class="carousel-track" role="list">
+          <article class="vendor-card" role="listitem">
+            <img src="assets/images/card-chateau.svg" alt="Chateau venue" />
+            <div>
+              <h3>Maison Lueur</h3>
+              <p>Château venue · Loire Valley</p>
+              <span class="tag">Gold tier</span>
+            </div>
+          </article>
+          <article class="vendor-card" role="listitem">
+            <img src="assets/images/card-floral.svg" alt="Floral stylist" />
+            <div>
+              <h3>Éclat Botanique</h3>
+              <p>Floral atelier · Paris</p>
+              <span class="tag">Sponsored</span>
+            </div>
+          </article>
+          <article class="vendor-card" role="listitem">
+            <img src="assets/images/card-dining.svg" alt="Fine dining table setting" />
+            <div>
+              <h3>Velours Dining</h3>
+              <p>Chef collective · Côte d'Azur</p>
+              <span class="tag">Signature</span>
+            </div>
+          </article>
+          <article class="vendor-card" role="listitem">
+            <img src="assets/images/card-planner.svg" alt="Wedding planner team" />
+            <div>
+              <h3>Atelier Ever After</h3>
+              <p>Planning studio · London</p>
+              <span class="tag">Platinum</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
